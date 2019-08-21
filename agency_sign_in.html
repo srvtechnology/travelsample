@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agency Sign In - Travel Portal</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/icon1.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato|Lexend+Deca&display=swap" rel="stylesheet">
+
+
+	<style type="text/css">
+		body {
+			background-image: url(img/agency/sign_in1.jpg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			text-transform: uppercase;
+		}
+		.container {
+			background-color: rgba(0,0,0,.5);
+			border-radius: 10px;
+			margin-top: 120px;
+			width: 75%;
+			padding: 20px;
+			box-shadow: 2px 5px 10px #000;
+		}
+		/*nav bar*/
+				/*fixed*/
+		.fixed {
+		  /*background-image: url(bg1.jpg);*/
+		  background-image: url(img/dar1.jpg);
+		  z-index: -1;
+		}
+		.dark {
+		  background-color: rgba(0, 0, 0, 01);
+		}
+		/* NAvigation */
+		.navbar {
+		  text-transform: uppercase;
+		  font-weight: 700;
+		  font-size: .9rem;
+		  letter-spacing: .1rem;
+		  background: rgba(163, 201, 217, 0) !important; 
+		  /*background: #56A1BF !important;*/
+		}
+		.navbar-brand img {
+		  padding-left: 50px;
+		  height: 2rem;
+		}
+		.navbar-nav li {
+		  padding-right: .7rem;
+		}
+		.navbar-light .navbar-nav .nav-link {
+		  color: #333;
+		  padding-top: .8rem;
+		}
+		.navbar-light .navbar-nav .nav-link.active,
+		.navbar-light .navbar-nav .nav-link:hover {
+		  color: blue;
+		}
+		/*font colors*/
+		a,h3,h6,label,button,small {
+			color: #f5f5f5;
+			font-family: 'lato';
+		}
+		.container a {
+			color: #00fbff !important;
+		}
+		#btn_a a {
+			color: #fff;
+		}
+		small {
+			text-transform: lowercase;
+			color: #aaa;
+		}
+		h3 {
+			padding-top: 15px;
+		}
+		/*form*/
+		#agency_form div {
+			margin-top: 10px; 
+			margin-bottom: 10px;
+		}
+		hr {
+			border-top: 1px solid #aaa;
+		}
+	@media screen and (max-width: 500px) {
+		body {
+			background-image: url(img/agency/sign_in_mobile1.jpg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		label {
+			font-size: 12px;
+		}
+		#agency_form div {
+			margin-top: 5px; 
+			margin-bottom: 5px;
+		}
+		h3 {
+			padding-top: 9px;
+			font-size: 25px;
+		}
+		h6 {
+			font-size: 16px;
+		}
+	}
+	@media screen and (max-width: 762px) {
+		body {
+			background-image: url(img/agency/sign_in_mobile.jpg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		.container {
+			margin-top: 90px;
+			width: 85%;
+			padding: 10px;
+		}
+		label {
+			font-size: 14px;
+		}
+		#agency_form div {
+			margin-top: 7px; 
+			margin-bottom: 7px;
+		}
+		h3 {
+			padding-top: 12px;
+		}
+	}
+	</style>
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="fixed.css">
+</head>
+<body>
+<!-- start background image -->
+	<div class="fixed-background">
+		<div class="dark"></div> <!-- End row dark -->
+
+	<!-- Navigation start -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+		<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="travel_portal.html">Home</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">Sign In</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="agency_register.html">Sign Up</a>
+				</li>
+
+				<!-- <li class="nav-item">
+					<a class="nav-link" href="#log_in">Log in</a>
+				</li> -->
+
+			</ul>
+		</div>
+	</nav>
+<!-- nav end -->
+
+<!-- Agency registration start -->
+
+<div class="container">
+	<div class="row">
+		<h3>Agency Sign In</h3>
+	</div>
+
+	<div class="row">
+		<a><i class="fas fa-user-tie"></i>&nbsp;&nbsp;&nbsp;&nbsp;Agency Details</a>
+	</div>
+
+	<hr class="myhr">
+
+	<div id="agency_form" class="row">
+		<div class="col-md-6 col-sm-12">
+			<label>email address</label>
+			<input type="email" class="form-control" name="" placeholder="example@gmail.com">
+		</div>
+		<div class="col-md-6 col-sm-12">
+			<label>Password</label>
+			<input type="Password" class="form-control" name="" placeholder="********">
+		</div>
+		<div class="col-12 d-flex justify-content-center">
+			<button class="btn btn-success btn-lg mt-2">SIGN IN</button>
+		</div>
+		<div class="col-12">
+			<h6>Don't have an account</h6>
+			<a href="agency_register.html" class="btn btn-info btn2 mt-2" style="color: white !important">Create An Account</a>
+		</div>
+	</div>
+
+</div>
+
+<!-- Agency registration end -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<!--============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============-->
+</body>
+</html>

@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sign In - Travel Portal</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="img/icon1.png">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+
+	<style type="text/css">
+		body {
+			background-color: lightblue;
+		}
+		.container {
+			width: 85%;
+			padding: 20px;
+			/*margin-top: 40px;*/
+		}
+		/*nav bar*/
+		/*fixed*/
+		.fixed {
+		  /*background-image: url(bg1.jpg);*/
+		  background-image: url(img/dar1.jpg);
+		  z-index: -1;
+		}
+		.dark {
+		  background-color: rgba(0, 0, 0, 01);
+		}
+		/* NAvigation */
+		.navbar {
+		  text-transform: uppercase;
+		  font-weight: 700;
+		  font-size: .9rem;
+		  letter-spacing: .1rem;
+		  background: rgba(163, 201, 217, 0) !important; 
+		  /*background: #56A1BF !important;*/
+		}
+		.navbar-brand img {
+		  padding-left: 50px;
+		  height: 2rem;
+		}
+		.navbar-nav li {
+		  padding-right: .7rem;
+		}
+		.navbar-light .navbar-nav .nav-link {
+		  color: #333;
+		  padding-top: .8rem;
+		}
+		.navbar-light .navbar-nav .nav-link.active,
+		.navbar-light .navbar-nav .nav-link:hover {
+		  color: blue;
+		}
+		.box_shadow {
+			box-shadow: 2px 5px 10px #000;
+		}
+		#sign_in div div {
+			background-color: white;
+		}
+		#sign_in h3, .form-group {
+			margin-bottom: 20px;
+		}
+		/*#sign_in .row {
+			padding: 50px;
+		}*/
+		#sign_in_img {
+			padding: 50px 25px 70px 50px;
+		}
+		.image1 {
+			border-radius: 5px;
+			min-width: 100%;
+			min-height: 100%;
+		}
+		.image2{
+			display: none;
+		}
+		#sign_in_text {
+			padding: 50px 50px 70px 25px;
+		}
+		/*button*/
+		.btn1 {
+			margin-bottom: 30px;
+		}
+		h6 {
+			margin-bottom: 20px;
+		}
+		@media screen and (max-width: 500px) {
+			body {
+				background-color: white;
+				overflow-x: hidden;
+			}
+			#sign_in .row {
+				margin: 20px;
+			}
+			#sign_in_img {
+				padding: 20px;
+			}
+			#sign_in_text {
+				padding: 20px;
+			}
+		}
+		@media screen and (max-width: 762px) {
+			body {
+				/*background-color: #fff;*/
+			}
+			h3,h5,h6,small,label,input,button {
+				color: #000;
+			}
+			h5 {
+				font-size: 16px;
+			}
+			h5, label, input, button {
+				font-size: 12px;
+			}
+			.container {
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+			.image1{
+			    display: none;
+			}
+			.image2{
+			    display: none;
+			}
+			#sign_in .row {
+				margin: 20px;
+			}
+			#sign_in_img {
+				padding: 20px;
+			}
+			#sign_in_text {
+				padding: 20px;
+				margin-top: -40px;
+			}
+			#sign_in h3 {
+				margin-bottom: 5px;
+			}
+			.form-group {
+				margin-bottom: 10px;
+			}
+			.btn1 {
+				margin-bottom: 10px;
+			}
+			h6 {
+				margin-bottom: 10px;
+			}
+		}
+
+	}
+	</style>
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="fixed.css">
+</head>
+<body>
+<!-- start background image -->
+	<div class="fixed-background">
+		<div class="dark"></div> <!-- End row dark -->
+
+	<!-- Navigation start -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light">
+		<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="travel_portal.html">Home</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="sign_up.html">Sign Up</a>
+				</li>
+
+			<!-- 	<li class="nav-item">
+					<a class="nav-link" href="#about_us">About us</a>
+				</li> -->
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">Sign In</a>
+				</li>
+
+			</ul>
+		</div>
+	</nav>
+<!-- nav end -->
+	<div id="sign_in" class="container">
+		<div class="row mx-auto">
+			<div id="sign_in_img" class="col-md-6 col-xs-12">
+				<img src="img/sign_in/sign_in.jpg" class="image1 img-fluid">
+				<img src="img/sign_in/sign_in_mobile.jpg" class="image2 mx-auto img-fluid">
+			</div>
+
+			<div id="sign_in_text" class="col-md-6 col-xs-12">
+				<form>
+					<div class="row">
+						<h3 class="form-group pl-3">Sign In</h3>
+						<div class="form-group col-12">
+							<label for="inputemail">Email address</label>
+							<input type="email" class="form-control" id="inputemail" aria-describedby="emailHelp" placeholder="Enter email">
+							<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+						</div>
+						<div class="form-group col-12">
+							<label for="inputpasssword">Password</label>
+							<input type="password" class="form-control" id="inputpasssword" placeholder="Password">
+						</div>
+						<div class="form-group col-12">
+							<input type="checkbox" onclick="showPassword()"><span id="password_spacer">Show Password</span>
+						</div>
+						<div class="col-12">
+							<button type="submit" class="btn btn-success btn1 float-right">Sign In</button>
+						</div>
+						<div class="col-12">
+							<h6>Don't Have An Account</h6>
+							<a href="sign_up.html" class="btn btn-info btn2">Create An Account</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>	
+	</div>
+	<br>
+	<br>
+	<br>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<script>
+	function showPassword() {
+	  var x = document.getElementById("inputpasssword");
+	  if (x.type === "password") {
+	    x.type = "text";
+	  } else {
+	    x.type = "password";
+	  }
+	}
+	</script>
+
+<!--============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============-->
+</body>
+</html>

@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Agency Sign In - Travel Portal</title>
+	<meta charset="utf-8">
+	<link rel="icon" href="img/icon1.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+	<script src="https://use.fontawesome.com/releases/v5.5.0/js/all.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Lato|Lexend+Deca&display=swap" rel="stylesheet">
+
+
+	<style type="text/css">
+		body {
+			background-image: url(img/agency/sign_in1.jpg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+			text-transform: uppercase;
+		}
+		.container {
+			background-color: rgba(0,0,0,.5);
+			border-radius: 10px;
+			margin-top: 120px;
+			width: 75%;
+			padding: 20px;
+			box-shadow: 2px 5px 10px #000;
+		}
+		/*nav bar*/
+				/*fixed*/
+		.fixed {
+		  /*background-image: url(bg1.jpg);*/
+		  background-image: url(img/dar1.jpg);
+		  z-index: -1;
+		}
+		.dark {
+		  background-color: rgba(0, 0, 0, 01);
+		}
+		/* NAvigation */
+		.navbar {
+		  text-transform: uppercase;
+		  font-weight: 700;
+		  font-size: .9rem;
+		  letter-spacing: .1rem;
+		  background: rgba(163, 201, 217, 0) !important; 
+		  /*background: #56A1BF !important;*/
+		}
+		.navbar-brand img {
+		  padding-left: 50px;
+		  height: 2rem;
+		}
+		.navbar-nav li {
+		  padding-right: .7rem;
+		}
+		.navbar-light .navbar-nav .nav-link {
+		  color: #333;
+		  padding-top: .8rem;
+		}
+		.navbar-light .navbar-nav .nav-link.active,
+		.navbar-light .navbar-nav .nav-link:hover {
+		  color: blue;
+		}
+		/*font colors*/
+		a,h3,label,button,small {
+			color: #f5f5f5;
+			font-family: 'lato';
+		}
+		.container a {
+			color: #00fbff !important;
+		}
+		small {
+			text-transform: lowercase;
+			color: #aaa;
+		}
+		h3 {
+			padding-top: 15px;
+		}
+		/*form*/
+		#agency_form div {
+			margin-top: 10px; 
+			margin-bottom: 10px;
+		}
+		hr {
+			border-top: 1px solid #aaa;
+		}
+	@media screen and (max-width: 500px) {
+		body {
+			background-image: url(img/agency/sign_in_mobile1.jpg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		label {
+			font-size: 12px;
+		}
+		#agency_form div {
+			margin-top: 5px; 
+			margin-bottom: 5px;
+		}
+		h3 {
+			padding-top: 9px;
+		}
+	}
+	@media screen and (max-width: 762px) {
+		body {
+			background-image: url(img/agency/sign_in_mobile.jpg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		.container {
+			margin-top: 90px;
+			width: 85%;
+			padding: 10px;
+		}
+		label {
+			font-size: 14px;
+		}
+		#agency_form div {
+			margin-top: 7px; 
+			margin-bottom: 7px;
+		}
+		h3 {
+			padding-top: 12px;
+		}
+	}
+	</style>
+	<!-- external css -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="fixed.css">
+</head>
+<body>
+<!-- start background image -->
+	<div class="fixed-background">
+		<div class="dark"></div> <!-- End row dark -->
+
+	<!-- Navigation start -->
+	<nav class="navbar navbar-expand-md navbar-light bg-light fixed-top">
+		<a class="navbar-brand" href="#"><img src="img/logo.png"></a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="travel_portal.html">Home</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="agency_sign_in.html">Sign In</a>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="#">Sign Up</a>
+				</li>
+
+				<!-- <li class="nav-item">
+					<a class="nav-link" href="#log_in">Log in</a>
+				</li> -->
+
+			</ul>
+		</div>
+	</nav>
+<!-- nav end -->
+
+<!-- Agency registration start -->
+
+<div class="container">
+	<div class="row">
+		<h3>Agency Registration</h3>
+	</div>
+
+	<div class="row">
+		<a><i class="fas fa-user-tie"></i>&nbsp;&nbsp;&nbsp;&nbsp;Agency Details</a>
+	</div>
+
+	<hr class="myhr">
+
+	<div id="agency_form" class="row">
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<label>First Name</label>
+			<input type="text" class="form-control" name="" placeholder="">
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<label>Last Name</label>
+			<input type="text" class="form-control" name="" placeholder="">
+		</div>
+		<div class="col-lg-4 ">
+		
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<label>agency Name</label>
+			<input type="text" class="form-control" name="" placeholder="">
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<label>contact number</label>
+			<input type="number" class="form-control" name="" placeholder="999-999-9999">
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<label>city</label>
+			<input type="text" class="form-control" name="" placeholder="kolkata">
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<label>state</label>
+			<input type="text" class="form-control" name="" placeholder="West Bengal">
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<label>country</label>
+			<input type="text" class="form-control" name="" placeholder="India">
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<label>zip code</label>
+			<input type="number" class="form-control" name="" placeholder="710552">
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<label>email address</label>
+			<input type="email" class="form-control" name="" placeholder="example@gmail.com">
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<label>pan card number</label>
+			<input type="number" class="form-control" name="" placeholder="">
+		</div>
+		<div class="col-lg-4 col-md-6 col-sm-12">
+			<label>Website</label>
+			<input type="text" class="form-control" name="" placeholder="https://">
+		</div>
+		<div class="col-lg-8 col-md-8 col-sm-12">
+			<small>all fields are manadatory and needed to be filled correctly</small>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-12">
+			<button class="btn btn-success btn-lg">Register Me</button>
+		</div>
+		<div class="col-12 mr-auto">
+			<a href="agency_sign_in.html"><button class="btn btn-sm btn-primary">already have an account</button></a>
+		<br>
+		<br>
+		</div>
+	</div>
+
+</div>
+
+<!-- Agency registration end -->
+<br>
+<br>
+<br>
+<br>
+<br>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+
+<!--============ BOOTSTRAP BREAK POINTS:
+
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+
+=============-->
+</body>
+</html>
